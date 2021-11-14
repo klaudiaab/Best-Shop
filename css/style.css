@@ -292,3 +292,96 @@ h2 {
     height: auto;
     margin-top: 55px;
 }
+
+/*pricing page*/
+
+.pricing {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pricing-boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.pricing-box {
+    width: 370px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--accent-color);
+    flex-direction: column;
+    border-radius: 18px;
+}
+.pricing-details {
+   margin-top: 34px;
+   margin-bottom: 60px;
+   text-align: center;
+}
+.pricing-type {
+    font-family: var(--font-raleway);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.pricing-price {
+    font-family: var(--font-open-sans);
+    font-size: 2.875rem;
+    font-weight: 300;
+    margin-top: 25px;
+    color: var(--accent-color);
+}
+.pricing-limited {
+    font-family: var(--font-raleway);
+    font-weight: 700;
+    font-size: 0.75rem;
+    margin-top: 15px;
+    text-align: center;
+}
+.pricing-items {
+    text-align: center;
+}
+.pricing-item {
+    margin-bottom: 20px;
+    font-size: 0.875rem;
+}
+.pricing-item::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url("../assets/Checkmark.svg");
+}
+.pricing-item--not::before {
+    background-image: url(../assets/Close.svg);
+}
+.pricing-box .btn {
+    position: relative;
+    bottom: -25px;
+    font-size: 0.8125rem;
+    background-color: var(--accent-color);
+}
+.pricing-box-basic {
+    --accent-color: var(--color-redish);
+}
+.pricing-box-basic .pricing-price {
+    margin-bottom: 30px;
+}
+.pricing-box-professional {
+    width: 400px;
+    --accent-color: var(--base-color);
+    margin: 0 40px;
+    box-shadow: 5px 1px 27px var(--base-color-shadow);
+}
+.pricing-box-professional .pricing-type {
+    font-size: 1.3125rem;
+}
+.pricing-box-professional .pricing-item {
+    margin-bottom: 25px;
+}
+.pricing-box-premium {
+    --accent-color: var(--color-green);
+}
